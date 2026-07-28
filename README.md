@@ -137,7 +137,7 @@ The repository also includes baseline machine learning models for comparison.
 
 ## 👩‍💻 Author
 
-**Ravali**
+**Pilli Ravali**
 
 Research Project:
 **Groundwater Quality Forecasting using GRU Neural Network**
