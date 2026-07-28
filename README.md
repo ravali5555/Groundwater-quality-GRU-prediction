@@ -5,26 +5,43 @@ Deep Learning based Time-Series Forecasting of Groundwater Quality
 </p>
 
 <p align="center">
-  <img src="images/Banner.png" alt="Groundwater Quality Forecasting using GRU Neural Network Banner" width="100%">
+<img src="images/Banner.png" alt="Groundwater Quality Forecasting using GRU Neural Network" width="100%">
 </p>
 
 <p align="center">
 
-![Python](https://img.shields.io/badge/Python-3.10-blue.svg)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange.svg)
-![Keras](https://img.shields.io/badge/Keras-DeepLearning-red.svg)
-![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626.svg)
-![License](https://img.shields.io/badge/License-MIT-green.svg)
+![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-FF6F00?logo=tensorflow)
+![Keras](https://img.shields.io/badge/Keras-Deep%20Learning-D00000?logo=keras)
+![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?logo=jupyter)
+![License](https://img.shields.io/badge/License-MIT-green)
 
 </p>
 
 ---
 
+# 📑 Table of Contents
+
+- 📌 Project Overview
+- 🎯 Objectives
+- 📊 Dataset
+- 🛠 Technologies Used
+- 📂 Project Structure
+- 🧠 Model Workflow
+- 📈 Model Performance
+- 🚀 Installation & Usage
+- 📈 Results
+- 🔮 Future Scope
+- 👩‍💻 Author
+- 📜 License
+
+---
+
 # 📌 Project Overview
 
-Groundwater is one of the most important natural resources for drinking, agriculture, and industrial use. Monitoring and forecasting groundwater quality is essential for sustainable water resource management.
+Groundwater is one of the most valuable natural resources for drinking, agriculture, and industrial use. Monitoring and forecasting groundwater quality enables better planning and sustainable water resource management.
 
-This project presents a **Gated Recurrent Unit (GRU)** based Deep Learning model for forecasting groundwater quality using historical water quality measurements. The project also compares the GRU model with baseline machine learning algorithms to evaluate prediction performance.
+This project implements a **Gated Recurrent Unit (GRU)** based Deep Learning model to forecast groundwater quality using historical groundwater quality data. The project also compares GRU with baseline machine learning models to evaluate predictive performance.
 
 ---
 
@@ -32,16 +49,14 @@ This project presents a **Gated Recurrent Unit (GRU)** based Deep Learning model
 
 - Forecast groundwater quality using historical data.
 - Develop a GRU-based Deep Learning model.
-- Compare GRU with baseline machine learning models.
-- Visualize model performance using training accuracy and loss curves.
+- Compare GRU with baseline machine learning algorithms.
+- Visualize training performance using accuracy and loss graphs.
 
 ---
 
 # 📊 Dataset
 
-The dataset contains groundwater quality measurements used to train and evaluate the forecasting model.
-
-Typical parameters include:
+The project uses a groundwater quality dataset containing important water quality parameters such as:
 
 - pH
 - Electrical Conductivity (EC)
@@ -56,20 +71,20 @@ Typical parameters include:
 
 # 🛠 Technologies Used
 
-- Python
-- TensorFlow
-- Keras
-- NumPy
-- Pandas
-- Matplotlib
-- Scikit-learn
-- Jupyter Notebook
+| Category | Tools |
+|----------|-------|
+| Programming | Python |
+| Deep Learning | TensorFlow, Keras |
+| Data Analysis | Pandas, NumPy |
+| Visualization | Matplotlib |
+| Machine Learning | Scikit-learn |
+| Development | Jupyter Notebook |
 
 ---
 
 # 📂 Project Structure
 
-```
+```text
 Groundwater-quality-GRU-prediction
 │
 ├── data
@@ -84,6 +99,7 @@ Groundwater-quality-GRU-prediction
 │   ├── GRU_Model.ipynb
 │   └── Baseline_Models.ipynb
 │
+├── requirements.txt
 ├── README.md
 ├── LICENSE
 └── .gitignore
@@ -93,14 +109,17 @@ Groundwater-quality-GRU-prediction
 
 # 🧠 Model Workflow
 
-```
+```text
 Groundwater Dataset
         │
         ▼
-Data Preprocessing
+Data Cleaning
         │
         ▼
 Feature Scaling
+        │
+        ▼
+Train-Test Split
         │
         ▼
 GRU Neural Network
@@ -117,14 +136,14 @@ Performance Evaluation
 
 ---
 
-# 📈 Repository Highlights
+# ⭐ Repository Highlights
 
-- Deep Learning using GRU
-- Time-Series Forecasting
-- Baseline Machine Learning Comparison
-- Data Preprocessing
-- Training Accuracy & Loss Visualization
-- Research-Oriented Implementation
+- ✅ Deep Learning using GRU
+- ✅ Time-Series Forecasting
+- ✅ Groundwater Quality Prediction
+- ✅ Baseline Model Comparison
+- ✅ Data Visualization
+- ✅ Research-Oriented Implementation
 
 ---
 
@@ -132,17 +151,21 @@ Performance Evaluation
 
 ## Training Accuracy
 
-![Training Accuracy](images/Accuracy.png)
+<p align="center">
+<img src="images/Accuracy.png" width="700">
+</p>
 
 ---
 
 ## Training Loss
 
-![Training Loss](images/Loss.png)
+<p align="center">
+<img src="images/Loss.png" width="700">
+</p>
 
 ---
 
-# 🚀 Getting Started
+# 🚀 Installation & Usage
 
 ## Clone the Repository
 
@@ -150,23 +173,25 @@ Performance Evaluation
 git clone https://github.com/ravali5555/Groundwater-quality-GRU-prediction.git
 ```
 
-## Install Dependencies
+## Install Required Libraries
 
 ```bash
-pip install tensorflow pandas numpy matplotlib scikit-learn
+pip install -r requirements.txt
 ```
 
 ## Run the Project
 
 1. Open `notebooks/GRU_Model.ipynb`
 2. Run all notebook cells.
-3. Evaluate the forecasting results.
+3. View the prediction results and evaluation metrics.
 
 ---
 
 # 📈 Results
 
-The GRU model effectively learns temporal groundwater quality patterns and provides accurate forecasting performance. The repository also includes baseline machine learning models for comparison.
+The GRU model successfully learns temporal groundwater quality patterns and provides accurate forecasting performance.
+
+The project also includes baseline machine learning models to compare prediction accuracy and demonstrate the effectiveness of GRU for time-series forecasting.
 
 ---
 
@@ -174,21 +199,28 @@ The GRU model effectively learns temporal groundwater quality patterns and provi
 
 - Hyperparameter Optimization
 - LSTM & Bi-LSTM Comparison
-- Real-Time Groundwater Monitoring
-- Web Application Deployment
 - Explainable AI (XAI)
+- Real-Time Groundwater Monitoring
+- Web Dashboard Deployment
+- Cloud Deployment
 
 ---
 
 # 👩‍💻 Author
 
-**Pilli Ravali**
+### **Pilli Ravali**
 
-Research Project
+**Research Project**
 
-**Groundwater Quality Forecasting using GRU Neural Network**
+Groundwater Quality Forecasting using GRU Neural Network
 
 GitHub: https://github.com/ravali5555
+
+---
+
+# 🙏 Acknowledgements
+
+This project was developed as part of research on groundwater quality forecasting using deep learning techniques.
 
 ---
 
