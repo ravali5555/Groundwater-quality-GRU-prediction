@@ -208,7 +208,7 @@ The project also includes baseline machine learning models to compare prediction
 
 # 👩‍💻 Author
 
-### **Pilli Ravali**
+### **Ravali P**
 
 **Research Project**
 
