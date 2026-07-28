@@ -5,6 +5,10 @@ Deep Learning based Time-Series Forecasting of Groundwater Quality
 </p>
 
 <p align="center">
+  <img src="images/banner.png" alt="Groundwater Quality Forecasting using GRU Neural Network Banner" width="100%">
+</p>
+
+<p align="center">
 
 ![Python](https://img.shields.io/badge/Python-3.10-blue.svg)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange.svg)
@@ -20,27 +24,27 @@ Deep Learning based Time-Series Forecasting of Groundwater Quality
 
 Groundwater is one of the most important natural resources for drinking, agriculture, and industrial use. Monitoring and forecasting groundwater quality is essential for sustainable water resource management.
 
-This project implements a **Gated Recurrent Unit (GRU)** based Deep Learning model to forecast groundwater quality using historical water quality data. The GRU model is also compared with multiple baseline machine learning models to evaluate prediction performance.
+This project presents a **Gated Recurrent Unit (GRU)** based Deep Learning model for forecasting groundwater quality using historical water quality measurements. The project also compares the GRU model with baseline machine learning algorithms to evaluate prediction performance.
 
 ---
 
 # 🎯 Objectives
 
-- Predict groundwater quality using historical data.
-- Build a GRU-based Deep Learning forecasting model.
-- Compare GRU with baseline machine learning algorithms.
-- Visualize model performance using training accuracy and loss graphs.
+- Forecast groundwater quality using historical data.
+- Develop a GRU-based Deep Learning model.
+- Compare GRU with baseline machine learning models.
+- Visualize model performance using training accuracy and loss curves.
 
 ---
 
 # 📊 Dataset
 
-The dataset contains groundwater quality measurements used for training and evaluating the forecasting model.
+The dataset contains groundwater quality measurements used to train and evaluate the forecasting model.
 
 Typical parameters include:
 
 - pH
-- Electrical Conductivity
+- Electrical Conductivity (EC)
 - Total Dissolved Solids (TDS)
 - Chloride
 - Sulphate
@@ -71,13 +75,14 @@ Groundwater-quality-GRU-prediction
 ├── data
 │   └── water_quality_dataset.csv
 │
+├── images
+│   ├── banner.png
+│   ├── Accuracy.png
+│   └── Loss.png
+│
 ├── notebooks
 │   ├── GRU_Model.ipynb
 │   └── Baseline_Models.ipynb
-│
-├── images
-│   ├── Accuracy.png
-│   └── Loss.png
 │
 ├── README.md
 ├── LICENSE
@@ -116,7 +121,7 @@ Performance Evaluation
 
 - Deep Learning using GRU
 - Time-Series Forecasting
-- Baseline Model Comparison
+- Baseline Machine Learning Comparison
 - Data Preprocessing
 - Training Accuracy & Loss Visualization
 - Research-Oriented Implementation
@@ -127,13 +132,13 @@ Performance Evaluation
 
 ## Training Accuracy
 
-![Accuracy](images/Accuracy.png)
+![Training Accuracy](images/Accuracy.png)
 
 ---
 
 ## Training Loss
 
-![Loss](images/Loss.png)
+![Training Loss](images/Loss.png)
 
 ---
 
@@ -154,16 +159,14 @@ pip install tensorflow pandas numpy matplotlib scikit-learn
 ## Run the Project
 
 1. Open `notebooks/GRU_Model.ipynb`
-2. Run all notebook cells
-3. Evaluate the prediction results
+2. Run all notebook cells.
+3. Evaluate the forecasting results.
 
 ---
 
 # 📈 Results
 
-The GRU model successfully learns temporal groundwater quality patterns and provides accurate forecasting performance.
-
-The repository also includes baseline machine learning models for comparison and evaluation.
+The GRU model effectively learns temporal groundwater quality patterns and provides accurate forecasting performance. The repository also includes baseline machine learning models for comparison.
 
 ---
 
@@ -174,7 +177,6 @@ The repository also includes baseline machine learning models for comparison and
 - Real-Time Groundwater Monitoring
 - Web Application Deployment
 - Explainable AI (XAI)
-- Cloud Deployment
 
 ---
 
@@ -186,14 +188,13 @@ Research Project
 
 **Groundwater Quality Forecasting using GRU Neural Network**
 
-GitHub:
-https://github.com/ravali5555
+GitHub: https://github.com/ravali5555
 
 ---
 
-# ⭐ If you found this project useful
+# ⭐ Support
 
-Please consider giving this repository a ⭐ on GitHub.
+If you found this project useful, please consider giving it a ⭐ on GitHub.
 
 ---
 
